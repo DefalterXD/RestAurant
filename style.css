@@ -11,8 +11,9 @@
     body, html {
         overflow-x: hidden;
         }
+
     body {
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -61,6 +62,10 @@
         left: 6px;
     }
 
+    .food_menu {
+        height: 100%;
+    }
+
     #food_container {
         position: relative;
         width: auto;
@@ -72,6 +77,11 @@
 
     #food_container img {
         display: none;
+    }
+
+    .food_menu {
+        display: flex;
+        flex-direction: column;
     }
 
     .food_desc {
@@ -107,20 +117,6 @@
         color: #fff;
         text-decoration-line: none;
         font-size: 0.8rem;
-    }
-
-    .rest_foot {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: auto;
-        background-color: #c06a19;
-        height: 50px;
-    }
-    
-    .rest_foot a {
-        color: #000;
-        text-decoration: none;
     }
 
     #food_more_desc {
