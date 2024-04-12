@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestAurant</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="rest_head">
+        <h2 class="company_title">Rest<br>Aurant</h2>
+        <a id = "cart" href="#"><i class='bx bx-restaurant'></i><span class="dot"><p id="product_count">1</p></span></a>
+    </header>
+    <main class="food_menu">
+        <div id="food_container">
+            <img id = food_pic src="./img/burger.jpg" alt="food">
+            <div class="food_desc">
+                <h2 id="food_title">Крутой бергер</h2>
+                <button id="more"><a href="#">Подробнее</a></button>
+                <button id="add"><a href="#">Добавить</a></button>
+            </div>
+        </div>
+    </main>
+    <article id="food_more_desc">
+        <div class="food_more_desc_container">
+        <button id="close">X</button>
+        <div class="food_img_container">
+        </div>
+        <div class="food_more_spec">
+            <p class="more_spec_title">Энергоэффективность на 100 мг:</p>
+            <ul>
+                <li id="protein">Белков: 12</li>
+                <li id="fat">Жиров: 12</li>
+                <li id="carbs">Углеводов: 12</li>
+                <li id="calorie">Калорийность: 555</li>
+            </ul>
+        </div>
+        <div class="desc_container">
+            <p class="food_spec_desc">Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Ratione itaque nesciunt rerum, 
+                voluptatum pariatur minima quaerat quos. Modi laudantium 
+                ea autem recusandae quaerat blanditiis eveniet quam, 
+                eius ducimus repellendus! Quibusdam.</p>
+        </div>
+    </div>
+    </article>
+    <footer class="rest_foot">
+        <p class="foot_text">Сделано <a href="#">Никитой</a></p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

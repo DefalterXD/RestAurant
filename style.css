@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Whisper&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marck Script', sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* CSS */
+    body, html {
+        overflow-x: hidden;
+        }
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rest_head {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #c06a19;
+    }
+
+    .company_title {
+        font-size: 1.5rem;
+        font-family: 'Whisper', sans-serif;
+    }
+
+    .rest_head .bx.bx-restaurant {
+        font-size: 2.5rem;
+        transform: scaleX(-1);
+    }
+
+    .rest_head a {
+        color: black;
+        text-decoration-line: none;
+    }
+
+    #cart {
+        position: relative;
+        left: 60px;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        right: 45px;
+    }
+
+    #product_count {
+        font-size: 0.8rem;
+        position: relative;
+        left: 6px;
+    }
+
+    #food_container {
+        position: relative;
+        width: auto;
+        height: 220px;
+        background:
+        linear-gradient(-140deg, rgba(0, 0, 0, 0.8) 55%, rgba(0, 0, 0, 0) 70%) no-repeat center top ,  
+        url("./img/burger.jpg") 0 0 / cover; 
+    }
+
+    #food_container img {
+        display: none;
+    }
+
+    .food_desc {
+        position: relative;
+        top: 60%;
+        left: 50%;
+    }
+
+    .food_desc #food_title {
+        color: #fff;
+    }
+
+    .food_desc #more {
+        padding: 0.4rem 0.2rem;
+        border-radius: 0.4rem;
+        border-style: solid;
+        border-color: #fff;
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .food_desc #add {
+        padding: 0.4rem 0.2rem;
+        border-radius: 0.4rem;
+        border-style: solid;
+        border-color: #131313;
+        background-color: #c06a19;
+        color: #fff;
+    }
+
+    #more a,
+    #add a{
+        color: #fff;
+        text-decoration-line: none;
+        font-size: 0.8rem;
+    }
+
+    .rest_foot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        background-color: #c06a19;
+        height: 50px;
+    }
+    
+    .rest_foot a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    #food_more_desc {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 100vw;
+        display: none;
+        position: absolute;
+    }
+    
+    .food_more_desc_container {
+        background-color: #bbb;
+        height: 70vh;
+        width: 100vw;
+        position: absolute;
+        top: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #food_more_desc #close {
+        border-style: none;
+        padding: 0.2rem 0.5rem;
+        border-radius: 50%;
+        align-self: flex-end;
+    }
+
+    .food_img_container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform: translate(0%, 10%);
+        background-image: url("./img/burger.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 65%;
+        align-self: center;
+    }
+
+    .food_more_spec {
+        position: relative;
+        bottom: 20px;
+        align-self: center;
+    }
+
+    .food_more_spec ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desc_container {
+        width: 300px;
+        text-align: center;
+        align-self: center;
+    }
+
+    /* #food_pic {
+        width: 200px;
+        height: auto;
+        background: rgb(255,177,0);
+        background: linear-gradient(90deg, rgba(255,177,0,0.5704482476584384) 33%, rgba(0,0,0,1) 63%);
+    } */
+  }
