@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Whisper&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marck Script', sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* CSS */
+    body, html {
+        overflow-x: hidden;
+        }
+
+    body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #e6e6e6;
+    }
+    .rest_head {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #c06a19;
+    }
+
+    .company_title {
+        font-size: 1.5rem;
+        font-family: 'Whisper', sans-serif;
+    }
+
+    .rest_head .bx.bx-restaurant {
+        font-size: 2.5rem;
+        transform: scaleX(-1);
+    }
+
+    .rest_head a {
+        color: black;
+        text-decoration-line: none;
+    }
+
+    #cart {
+        position: relative;
+        left: 60px;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        right: 45px;
+    }
+
+    #product_count {
+        font-size: 0.8rem;
+        position: relative;
+        left: 6px;
+    }
+
+    .cart_menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .cart_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .cart_title {
+        text-align: center;
+        margin: 2rem 0;
+    }
+    
+    #food_container {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+    }
+
+    #food_container img {
+        width: 30%;
+        border-radius: 50%;
+    }
+    
+    
+    .food_desc #food_title {
+        color: #000;
+        margin-left: 1rem;
+    }
+
+    .food_desc {
+        text-align: center;
+        margin-left: 2rem;
+        border-left: 2px solid #000;
+    }
+
+    .food_desc #remove {
+        margin-left: 3.2rem;
+        width: 10%;
+        border-radius: 100%;
+        border-style: solid;
+        border-color: #131313;
+        background-color: #c06a19;
+        color: #fff;
+    }
+    
+    .food_desc #quantity {
+        width: 10%;
+        font-size: 1.2rem;
+        border-radius: 20%;
+        text-align: center;
+    }
+
+    .food_desc #add {
+        width: 10%;
+        border-radius: 100%;
+        border-style: solid;
+        border-color: #131313;
+        background-color: #c06a19;
+        color: #fff;
+    }
+
+    .food_desc #delete {
+        background-color: transparent;
+        border-style: none;
+    }
+    
+    #delete a {
+        color: #911e1e;
+        text-decoration: none;
+    }
+
+    #remove a,
+    #add a{
+        color: #fff;
+        text-decoration-line: none;
+        font-size: 0.8rem;
+    }
+
+    #buy {
+        padding: 0.6rem 1rem;
+        border-radius: 10%;
+        border-style: solid;
+        background-color: #c06a19;
+        color: #fff;
+        align-self: flex-end;
+        margin-top: 2rem;
+    }
+}

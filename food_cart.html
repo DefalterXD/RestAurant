@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestAruant</title>
+    <link rel="stylesheet" href="./cart_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="rest_head">
+        <a href="./index.html" class="home_link"><h2 class="company_title">Rest<br>Aurant</h2></a>
+        <a id = "cart" href="food_cart.html"><i class='bx bx-restaurant'></i><span class="dot"><p id="product_count">1</p></span></a>
+    </header>
+    <main class="cart_menu">
+        <h2 class="cart_title">Корзина</h2>
+        <section class="cart_container">
+            <section id="food_container">
+                <img id = food_pic src="./img/burger.jpg" alt="food">
+                <section class="food_desc">
+                    <h2 id="food_title">Крутой бергер</h2>
+                    <h2 id="food_price">1690тг</h2>
+                    <button id="remove" class="remove"><a href="#">-</a></button>
+                    <input type="text" id="quantity" name="quantity" min="1" value="1">
+                    <button id="add"><a href="#">+</a></button>
+                    <button id="delete"><a href="#">Удалить</a></button>
+                </section>
+            </section>
+            <section id="food_container">
+                <img id = food_pic src="./img/burger.jpg" alt="food">
+                <section class="food_desc">
+                    <h2 id="food_title">Крутой бергер</h2>
+                    <h2 id="food_price">1690тг</h2>
+                    <button id="remove" class="remove"><a href="#">-</a></button>
+                    <input type="text" id="quantity" name="quantity" min="1" value="1">
+                    <button id="add"><a href="#">+</a></button>
+                    <button id="delete"><a href="#">Удалить</a></button>
+                </section>
+            </section>
+            <section id="food_container">
+                <img id = food_pic src="./img/burger.jpg" alt="food">
+                <section class="food_desc">
+                    <h2 id="food_title">Крутой бергер</h2>
+                    <h2 id="food_price">1690тг</h2>
+                    <button id="remove" class="remove"><a href="#">-</a></button>
+                    <input type="text" id="quantity" name="quantity" min="1" value="1">
+                    <button id="add"><a href="#">+</a></button>
+                    <button id="delete"><a href="#">Удалить</a></button>
+                </section>
+            </section>
+            <section id="food_container">
+                <img id = food_pic src="./img/burger.jpg" alt="food">
+                <section class="food_desc">
+                    <h2 id="food_title">Крутой бергер</h2>
+                    <h2 id="food_price">1690тг</h2>
+                    <button id="remove" class="remove"><a href="#">-</a></button>
+                    <input type="text" id="quantity" name="quantity" min="1" value="1">
+                    <button id="add"><a href="#">+</a></button>
+                    <button id="delete"><a href="#">Удалить</a></button>
+                </section>
+            </section>
+        </section>
+        <button id="buy">Заказать</button>
+    </main>
+    <script src="./cart_script.js"></script>
+</body>
+</html>
