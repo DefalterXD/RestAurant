@@ -1,13 +1,17 @@
 const foodMoreWindow = document.querySelector("#food_more_desc");
-const moreCloseButton = document.querySelector("#close");
-const foodMoreButton = document.querySelector("#more");
+const moreCloseButton = document.querySelectorAll("#close");
+const foodMoreButton = document.querySelectorAll("#more");
 
-foodMoreButton.addEventListener("click", () => {
-    foodMoreWindow.style.display = "flex";
-    
+foodMoreButton.forEach((button) => {
+    button.addEventListener("click", () => {
+        foodMoreWindow.style.display = "flex";
+    }); 
 });
+    
 
 
-moreCloseButton.addEventListener("click", () => {
+moreCloseButton.forEach((button) => {
+    button.addEventListener("click", () => {
     foodMoreWindow.style.display = "none";
+    });
 });
